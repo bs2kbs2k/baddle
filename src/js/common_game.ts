@@ -46,7 +46,11 @@ class GameState {
     if (!combinedWords.includes(guess.toLowerCase())) {
       return "Guess not in dictionary";
     }
-    return violation(this._board.slice(0, -1).flat(), guess);
+    if (this.hardMode) {
+      return violation(this._board.slice(0, -1).flat(), guess);
+    } else {
+      return null;
+    }
   }
 
   public type(key: Key) {
