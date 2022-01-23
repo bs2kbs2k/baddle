@@ -1,0 +1,49 @@
+.tile {
+  display: inline-flex;
+  font-size: 2em;
+  margin: 0 0 5px 5px;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 5px);
+  box-sizing: border-box;
+  aspect-ratio: 1;
+  border: 2px solid var(--color-tone-4);
+  color: var(--tile-text-color);
+  font-weight: bold;
+  user-select: none;
+}
+
+.pending {
+  border-color: var(--color-tone-3);
+  color: var(--color-tone-1);
+}
+
+.absent {
+  background-color: var(--color-absent);
+  border: none;
+}
+
+.elsewhere {
+  background-color: var(--color-present);
+  border: none;
+}
+
+.correct {
+  background-color: var(--color-correct);
+  border: none;
+}
+
+#board {
+  width: 335px;
+  aspect-ratio: 5 / 6;
+  box-sizing: content-box;
+  margin: auto;
+  padding: 5px 5px 0 0;
+}
+
+.row {
+  width: 100%;
+  aspect-ratio: 5;
+  display: inline-flex;
+  vertical-align: top;
+}

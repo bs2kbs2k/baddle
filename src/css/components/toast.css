@@ -1,0 +1,12 @@
+#toast {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: var(--color-tone-1);
+  color: var(--color-tone-7);
+}
